@@ -51,5 +51,10 @@ router.delete("/hewan/:id", verifyToken, deleteHewan);
 // layanan route
 
 // dokter route
+router.get("/dokter", verifyToken, getAllDokter)
+router.get("/dokter/:id", verifyToken, getDokterById)
+router.post("/dokter", verifyToken, createDokter)
+router.patch("/dokter/:id", verifyToken, updateDokter)
+router.delete("/dokter/:id", verifyToken, deleteDokter)
 
 module.exports = router;
